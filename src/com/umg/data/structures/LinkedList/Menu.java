@@ -15,11 +15,11 @@ public class Menu {
 		System.out.println("1.- Insertar al inicio");
 		System.out.println("2.- Insertar al final");
 		System.out.println("3.- Recorrer hacia adelante");
-		System.out.println("4.- Recorrer hacia atrás");
-		System.out.println("5.- Mostrar el tamaño de la lista");
-		System.out.println("6.- Mostrar si la lista está vacía");
+		System.out.println("4.- Recorrer hacia atrï¿½s");
+		System.out.println("5.- Mostrar el tamaï¿½o de la lista");
+		System.out.println("6.- Mostrar si la lista estï¿½ vacï¿½a");
 		System.out.println("7.- Buscar elemento por valor");
-		System.out.println("8.- Buscar elemento por índice");
+		System.out.println("8.- Buscar elemento por ï¿½ndice");
 		System.out.println("9.- Borrar un elemento");
 		System.out.println("10.- Salir");
 		
@@ -60,7 +60,7 @@ public class Menu {
 		    	dl_nodes.insertAtTail(datoIT1);
 		    	dl_nodes.insertAtTail(datoIT2);
 		    	
-		    	dl_nodes.traverseForward();
+		    	dl_nodes.traverseBackward();
 		    	break;
 		    	
 		    case 3:
@@ -82,7 +82,7 @@ public class Menu {
 		    	break;
 		    	
 		    case 4:
-		    	System.out.println("Recorrer hacia Atrás");
+		    	System.out.println("Recorrer hacia Atrï¿½s");
 		    	System.out.println();
 				System.out.println("Agregue un dato 1");
 		    	String datoRA= sc.next();
@@ -100,7 +100,7 @@ public class Menu {
 		    	break;
 		    	
 		    case 5:
-		    	System.out.println("Mostrar el tamaño de la lista");
+		    	System.out.println("Mostrar el tamaï¿½o de la lista");
 		    	System.out.println();
 		    	System.out.println("Agregue un dato 1");
 		    	String datoT= sc.next();
@@ -118,13 +118,13 @@ public class Menu {
 		    	
 		    	int size = dl_nodes.size();
 
-		    	System.out.println("El tamaño de la lista es: " + size);
+		    	System.out.println("El tamaï¿½o de la lista es: " + size);
 		    	break;
 		    	
 		    case 6:
-		    	System.out.println("Mostrar si la lista está vacía");
+		    	System.out.println("Mostrar si la lista estï¿½ vacï¿½a");
 		    	System.out.println();
-		    	System.out.println("¿Desea ingresar datos?");
+		    	System.out.println("ï¿½Desea ingresar datos?");
 		    	System.out.println("1.- Si || 2.- No");
 		    	System.out.println("");
 		    	int dato = sc.nextInt();
@@ -145,10 +145,10 @@ public class Menu {
 			    	dl_nodes.traverseForward();
 			    	
 		    		Boolean res = dl_nodes.isEmpty();
-		    		System.out.println("¿La lista está vacía? " + res);
+		    		System.out.println("ï¿½La lista estï¿½ vacï¿½a? " + res);
 		    	} else {
 		    		Boolean res = dl_nodes.isEmpty();
-		    		System.out.println("¿La lista está vacía? " + res);
+		    		System.out.println("ï¿½La lista estï¿½ vacï¿½a? " + res);
 		    	}
 		    	break;
 		    	
